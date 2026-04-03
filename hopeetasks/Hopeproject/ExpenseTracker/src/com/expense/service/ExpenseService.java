@@ -46,7 +46,7 @@ private double budget = 0;
 
     if (budget > 0) {
         if (total > budget) {
-            System.out.println("⚠️ ALERT: You exceeded your budget!");
+            System.out.println("ALERT: You exceeded your budget!");
         } else {
             System.out.println("Remaining Budget: " + (budget - total));
         }
