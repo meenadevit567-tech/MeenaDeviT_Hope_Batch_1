@@ -14,11 +14,14 @@ public class MainApp {
         Scanner sc = new Scanner(System.in);
         PaymentProcessor processor = new PaymentProcessor();
 
-        List<Transaction> history = new ArrayList<>();
+        ArrayList<Transaction> history = new ArrayList<>();
 
         while (true) {
 
-            System.out.println("\n1. Pay  2. View History  3. Analytics  4. Exit");
+            System.out.println("1. Pay");
+            System.out.println("2. View History");
+            System.out.println("3. Analytics");
+            System.out.println("4. Exit");
             int option = sc.nextInt();
 
             if (option == 1) {
@@ -74,7 +77,7 @@ while (attempts < 3) {
 }
 
 if (attempts == 3) {
-    System.out.println("Account Blocked!! Suspicious Activity");
+    System.out.println("Account Blocked due to Suspicious Activity");
     history.add(new Transaction(amount, methodName, "Blocked"));
     continue;
 }
