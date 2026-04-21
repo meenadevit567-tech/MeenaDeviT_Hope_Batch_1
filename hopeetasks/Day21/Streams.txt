@@ -1,0 +1,6 @@
+Streams
+    ->API
+
+Life cycle of Stream 
+
+    START -> INTERMEDIATEACTIONS -> TERMINALACTIONS
